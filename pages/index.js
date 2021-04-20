@@ -6,11 +6,12 @@ import {initiateCheckout} from '../lib/payments.js'
 import products from '../products.json'
 
 export default function Home() {
-  console.log('NEXT_PUBLIC_STRIPE_API_KEY', process.env.NEXT_PUBLIC_STRIPE_API_KEY);
+  //console.log('NEXT_PUBLIC_STRIPE_API_KEY', process.env.NEXT_PUBLIC_STRIPE_API_KEY);
+
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Eason's Books Shop</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
