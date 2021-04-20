@@ -14,7 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to BooksShop!
+          Welcome to Books Shop!
         </h1>
 
         <p className={styles.description}>
