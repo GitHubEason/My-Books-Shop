@@ -1,0 +1,28 @@
+[
+    {
+        "id": "price_1IiH7MDlrWhOviAESU8caLbM",
+        "title": "A History of the Beginning of the Lord's recovery in NewZealand",
+        "description": "This book is the result of fifteen years of research, mainly in the form of interviews and discussions with many of the saints who came into the Lord’s recovery in the early 1970s.",
+        "image": "/image/History.jpg",
+        "price": 12
+    },
+
+    {
+        "id": "price_1IiH9hDlrWhOviAEDGr09XI4",
+        "title": "Character",
+        "description": "As we are learning to serve the Lord, we need to be in constant fellowship with Him and rely on His grace, but we also must be willing to address the matter of our character in order to be useful to the Master.",
+        "image": "/image/Character.jpg",
+        "price": 9
+    },
+
+    {
+        "id": "price_1IiHA8DlrWhOviAEdy0hCFNE",
+        "title": "Christ as the reality",
+        "description": "Christ is revealed in a rich and marvelous way through types in the Old Testament. In Christ as the Reality Witness Lee provides exposition of some of the deepest and richest types of Christ as revealed in the five offerings in the book of Leviticus, including the burnt offering, the meal offering, the peace offering, the sin offering, and the trespass offering.",
+        "image": "/image/Christ_as_the_reality.jpg",
+        "price": 10
+    }
+
+
+
+]
