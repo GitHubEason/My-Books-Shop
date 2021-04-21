@@ -1,12 +1,24 @@
+import { useState } from 'react';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-import {initiateCheckout} from '../lib/payments.js'
-
 import products from '../products.json'
+
+
+
+
+import useCart from '../hooks/use-cart.js';
+
+
 
 export default function Home() {
   //console.log('NEXT_PUBLIC_STRIPE_API_KEY', process.env.NEXT_PUBLIC_STRIPE_API_KEY);
+  const { subtotal, totalItems, addToCart, checkout} = useCart();
+ 
+
+  
+  
+  
 
   return (
     <div className={styles.container}>
@@ -23,6 +35,13 @@ export default function Home() {
         <p className={styles.description}>
           Ministry books
         </p>
+        <p className={styles.description}>
+          <strong>Items:</strong> { totalItems }
+          <br />
+          <strong>Total Cost: </strong> $ { subtotal }
+          <br />
+          <button className={styles.button} onClick = {checkout}>Check Out</button>
+        </p>
 
         <ul className={styles.grid}>
           {products.map(product => {
@@ -36,15 +55,12 @@ export default function Home() {
                 <p>{description}</p>
               </a>
               <button className={styles.button} onClick={() =>{
-                initiateCheckout({
-                  lineItems: [
-                    {                     
-                      price: id,
-                      quantity: 1
-                    }
-                  ]
-                });
-              } }>Buy Now</button>
+                addToCart({
+                  id
+                })
+         
+                
+              } }>Add to cart</button>
           </li>
             )
           })}
