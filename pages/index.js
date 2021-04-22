@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
+import styles from '../styles/Home.module.css' 
+import { FaShoppingCart } from 'react-icons/fa'
 import products from '../products.json'
 
 
 
 
-import useCart from '../hooks/use-cart.js';
+import { useCart } from '../hooks/use-cart.js';
 
 
 
