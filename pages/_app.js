@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import { CartContext, useCartState}  from '../hooks/use-cart.js'
 import { createContext, useContext } from 'react'
 
-//import Nav from '../components/Nav';
+//import Nav from '../components/Nav/Nav.js';
 //import Nav from "react-bootstrap/Nav";
 
 

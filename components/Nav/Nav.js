@@ -1,9 +1,9 @@
 import { FaShoppingCart } from 'react-icons/fa';
 
-import styles from './Nav.module.css';
+import styles from './main.css';
 
 const Nav = () => {
-    reture (
+    return (
         <nav className={stryles.nav}>
             <p className={styles.navTitle}>
                 Books Shop
